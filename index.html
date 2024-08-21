@@ -67,22 +67,45 @@
       .manrope-font {
       font-family: "Manrope", sans-serif;
       }
+      .dark-1 {
+        color: #1C1C1C;
+      }
+      .dark-3 {
+        color: #777777;
+      }
+      .custom-shadow {
+        box-shadow: 0px 7px 50px rgba(0, 0, 0, 0.06);
+      }
     </style>
 
 </head>
-<body>
-    <main>
+<body class="manrope-font">
+    <main class="p-5">
       <!-- hero section -->
-      <section class="flex justify-between max-w-6xl mx-auto">
+      <section class="lg:flex justify-between max-w-6xl mx-auto pt-16">
         <!-- header content -->
-        <div>
-          <h1>It's good <br> tea time at The Tea House</h1>
-          <p>Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-          <button>Explore More</button>
+        <div class="max-w-[628px]">
+          <h1 class="lg:text-[80px] text-5xl font-extrabold text-[#1C1C1C] lg:leading-[100px] mb-7">It's good <br> tea time at The Tea House</h1>
+          <p class="font-medium lg:text-lg text-base text-[#777777] pb-7 lg:max-w-[513px] w-2/3">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+          <button class="font-bold lg:text-xl text-lg text-white lg:p-5 px-5 py-3 bg-gradient-to-r from-orange-400 to-red-500 rounded-xl">Explore More <i class="fa-solid fa-arrow-up-right"></i></button>
         </div>
-        <!-- header image -->
-        <div>
-          <img src="./images/banner.png" alt="">
+        <!-- header image and card -->
+        <div class="relative">
+          <div>
+            <img src="./images/banner.png" alt="">
+          </div>
+          <!-- card -->
+          <div class="flex absolute gap-3 lg:px-7 lg:py-4 px-5 py-3 rounded-xl custom-shadow justify-center items-center lg:left-12 left-8 lg:bottom-12 bottom-5 z-10 bg-white">
+            <!-- icon -->
+            <div>
+              <i class="fa-solid fa-star text-amber-400 text-3xl"></i>
+            </div>
+              <!-- text -->
+            <div>
+              <h3 class="text-3xl dark-1 font-extrabold">5.00</h3>
+              <p class="dark-3 font-semibold">Trust Pilot Ratings</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
